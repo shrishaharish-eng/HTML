@@ -1,0 +1,51 @@
+<html lang="en">
+<!-- Setting the language is useful in 2 ways:
+ 1. Allows the webpage to appear correctly in language-specific results
+ 2. It is useful to people with visual impairments using screen readers (for example, the word "six" exists in both French and English, but is pronounced differently.) 
+ 
+ Note: You can also set subsections of your document to be recognized as different languages. E.g see Japanese section in the body of this document-->
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- This element specifies the document's character encoding — the character set that the document is permitted to use. utf-8 is a universal character set that includes pretty much any character from any human language. -->
+
+    <title>Head | HTML</title>
+
+    <!-- Title text gets displayed in browser tabs, and when users try to bookmark a page, this text is suggested as bookmark name. This is also displayed in search results in browser. -->
+
+    <meta name="author" content="Shrisha">
+    <meta name="description" content="Notes about meta tags in HTML">
+
+    <!-- Specifying an author is beneficial in many ways: it is useful to be able to understand who wrote the page, if you have any questions about the content and you would like to contact them. Some content management systems have facilities to automatically extract page author information and make it available for such purposes.
+
+    Specifying a description that includes keywords relating to the content of your page is useful as it has the potential to make your page appear higher in relevant searches performed in search engines (such activities are termed Search Engine Optimization, or SEO.) -->
+
+    <meta property="og:image" content="https://developer.mozilla.org/mdn-social-share.png" />
+    <meta property="og:description" content="The Mozilla Developer Network (MDN) provides
+    information about Open Web technologies including HTML, CSS, and APIs for both websites
+    and HTML Apps." />
+    <meta property="og:title" content="Mozilla Developer Network" />
+
+    <!-- Open Graph Protocols (og:) when you link the web page on social media platforms like Facebook, the link appears along with an image, tile and description: a richer experience for users. -->
+
+    <link rel="icon" href="./favicon.ico">
+
+    <!-- favicon (short for "favorites icon", small icon which is displayed on browser tabs. -->
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- To link CSS stylesheet to HTML document -->
+
+    <script src="./script.js" defer></script>
+
+    <!-- To link JavaScript file to HTML document. The defer attribute guarantees the HTML is all loaded before the JavaScript runs so that you don't get errors due to JavaScript trying to access an HTML element that doesn't exist on the page yet.  -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Meta Examples</h1>
+    <p>Japanese example: <span lang="ja">ご飯が熱い。</span>.</p>
+    
+</body>
+</html>
